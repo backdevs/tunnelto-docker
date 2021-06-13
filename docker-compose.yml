@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  tunnelto:
+    image: backdevs/tunnelto
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VERSION: 0.1.18
+  tunnelto-versioned:
+    extends:
+      service: tunnelto
+    image: backdevs/tunnelto:0.1.18
