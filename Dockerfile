@@ -1,11 +1,9 @@
 FROM ubuntu:latest
 
 ARG VERSION=0.1.18
-ENV TUNNELTO_VERSION ${VERSION}
+ENV TUNNELTO_VERSION=${VERSION}
 
 ENV DASHBOARD_PORT=8080
-ENV HOST=localhost
-ENV PORT=8000
 
 RUN apt-get update \
     && apt-get install -y curl
