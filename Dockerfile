@@ -9,7 +9,7 @@ ADD https://github.com/agrinman/tunnelto/releases/download/${TUNNELTO_VERSION}/t
 
 RUN apt-get update \
     && apt-get install --no-install-recommends -y \
-        libcurl4 \
+        ca-certificates \
         tini \
     && rm -rf /var/lib/apt/lists/* \
 
