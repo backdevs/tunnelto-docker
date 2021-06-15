@@ -13,8 +13,10 @@ ADD https://github.com/agrinman/tunnelto/releases/download/${TUNNELTO_VERSION}/t
 RUN tar -xf /tmp/tunnelto.tar.gz -C /bin \
     && rm /tmp/tunnelto.tar.gz
 
-CMD /bin/tunnelto \
-    --dashboard-port=${DASHBOARD_PORT} \
-    --key=${KEY} \
-    --host=${HOST} \
-    --port=${PORT}
+COPY docker-entrypoint.sh /
+
+ENTRYPOINT ["/docker-entrypoint.sh"]
+
+CMD ["tunnelto"]
+
+EXPOSE ${DASHBOARD_PORT}:${DASHBOARD_PORT}
