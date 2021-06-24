@@ -4,7 +4,7 @@
   <img alt="Docker Build Status" src="https://img.shields.io/docker/cloud/build/backdevs/tunnelto">
 </p>
 
-## Prerequisites
+# Prerequisites
 * [Docker](https://docs.docker.com/get-docker/) `^20.10`
 * [docker-compose](https://docs.docker.com/compose/install) `^1.29` (required if not included in Docker)
 
