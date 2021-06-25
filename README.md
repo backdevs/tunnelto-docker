@@ -81,7 +81,7 @@ docker build \
 
 # Environment variables
 
-All the available environment variables mapped to the official [`tunnelto` options/arguments](https://github.com/agrinman/tunnelto#more-options).
+All the available environment variables are mapped to `tunnelto` [arguments](https://github.com/agrinman/tunnelto#more-options).
 
 How they're implemented can be seen in [`docker-entrypoint.sh`](docker-entrypoint.sh).
 
