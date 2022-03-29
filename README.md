@@ -1,7 +1,7 @@
 # Still [`tunnelto`](https://github.com/agrinman/tunnelto), but dockerized! :whale:
 <p>
   <img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/backdevs/tunnelto-docker">
-  <img alt="Docker Build Status" src="https://img.shields.io/docker/cloud/build/backdevs/tunnelto">
+  <img alt="Docker Hub pulls" src="https://img.shields.io/docker/pulls/backdevs/tunnelto">
 </p>
 
 # Prerequisites
